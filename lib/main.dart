@@ -107,7 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
               'camera should be here',
             ),
             Text('$_counter'),
-            Text('open camera should be there'),
+            Text('open camera should be here'),
           ],
         ),
       ),
