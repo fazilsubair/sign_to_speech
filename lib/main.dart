@@ -83,19 +83,31 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body:Padding(
-        padding: EdgeInsets.only(left: 100 ,top: 50),
+        padding: EdgeInsets.only(top: 50),
         child: Container(
-          width: 200,
-          height: 200,
-          color: Colors.red,
+          width: 300,
+          height: 400,
+          color: Colors.green,
         ),
       ),
-      floatingActionButton: FloatingActionButton.extended(
-        label: const Text('open camera'),
-        onPressed: _opencammera,
-        tooltip: 'Increment',
-        icon: const Icon(Icons.camera_alt_outlined),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+
+      floatingActionButton:
+
+      Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          FloatingActionButton(
+            // label: const Text('open camera'),
+            onPressed: _opencammera,
+            tooltip: 'Increment',
+            child: const Icon(Icons.camera_alt_outlined),
+          ),
+        ],
+      ),
+      // floatingActionButton: FloatingActionButton.extended(
+      //   label : const Text('speaker'),
+      //   icon: const Icons(Icons.speaker),
+      // ),// This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
